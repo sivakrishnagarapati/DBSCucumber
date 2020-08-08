@@ -1,0 +1,19 @@
+package pageObjects;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class StrongerTogetherPage {
+	public WebDriver driver;
+
+	public StrongerTogetherPage(WebDriver driver) {
+		this.driver = driver;
+	}
+	
+	By singapore = By.linkText("Singapore");
+	
+	public WebElement Singapore() {
+		return driver.findElement(singapore);
+	}
+}

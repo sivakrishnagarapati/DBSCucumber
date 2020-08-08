@@ -1,0 +1,72 @@
+package stepDefinations;
+
+import org.junit.runner.RunWith;
+import org.openqa.selenium.WebDriver;
+
+import CucumberProject.DBSCucumberProject.Base;
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import pageObjects.HomePage;
+import pageObjects.StrongerTogetherPage;
+
+
+public class stepDefination {
+	public WebDriver driver = null;
+	HomePage homepage;
+	StrongerTogetherPage strongertogetherpage;
+	
+	@Given("^Browser is launched and DBS web URL is entered$")
+    public void browser_is_launched_and_dbs_web_url_is_entered() throws Throwable {
+		driver = Base.getDriver();
+    }
+
+    @When("^User click on Learn More button$")
+    public void user_click_on_learn_more_button() throws Throwable {
+    	homepage = new HomePage(driver);
+    	homepage.learnMore().click();
+        
+    }
+
+    @Then("^Read the table in excel sheet$")
+    public void read_the_table_in_excel_sheet() throws Throwable {
+        
+    }
+
+    @Then("^Validate the total number of awards$")
+    public void validate_the_total_number_of_awards() throws Throwable {
+        
+    }
+
+    @And("^User navigate to Singapore$")
+    public void user_navigate_to_singapore() throws Throwable {
+    	strongertogetherpage= new StrongerTogetherPage(driver);
+    	strongertogetherpage.Singapore().click();
+    	
+        
+    }
+
+    @And("^User navigate to About in the header tabs$")
+    public void user_navigate_to_about_in_the_header_tabs() throws Throwable {
+    	strongertogetherpage= new StrongerTogetherPage(driver);
+    	strongertogetherpage.About().click();
+    }
+
+    @And("^User navigate to Who we are tab$")
+    public void user_navigate_to_who_we_are_tab() throws Throwable {
+        
+    }
+
+    @And("^User navigate to Our Awards & Accolades$")
+    public void user_navigate_to_our_awards_accolades() throws Throwable {
+        
+    }
+
+    @And("^validate the name and caption of the awards$")
+    public void validate_the_name_and_caption_of_the_awards() throws Throwable {
+        
+    }
+
+
+}

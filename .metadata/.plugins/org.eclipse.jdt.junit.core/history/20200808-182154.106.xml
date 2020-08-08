@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner1" project="DBSCucumberProject" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="cucumberOptions.TestRunner1" time="17.604">
+    <testsuite name="DBS Awards validation" time="17.604">
+      <testcase name="DBS Awards validation" classname="DBS Awards validation" time="17.604"/>
+    </testsuite>
+  </testsuite>
+</testrun>

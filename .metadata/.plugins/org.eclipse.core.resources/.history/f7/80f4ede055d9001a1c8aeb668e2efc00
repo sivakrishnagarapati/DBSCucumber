@@ -1,0 +1,19 @@
+package pageObjects;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class AboutDBS {
+	public WebDriver driver;
+
+	public AboutDBS(WebDriver driver) {
+		this.driver = driver;
+	}
+	
+	By whoweare = By.linkText("Who We Are");
+	
+	public WebElement whoWeAre() {
+		return driver.findElement(whoweare);
+	}
+}
