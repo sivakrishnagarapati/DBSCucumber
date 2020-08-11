@@ -1,5 +1,8 @@
 package pageObjects;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -13,6 +16,7 @@ public class StrongerTogetherPage {
 	
 	By singapore = By.linkText("Singapore");
 	By about = By.linkText("About");
+	By table = By.xpath("//table/tbody");
 	
 	public WebElement Singapore() {
 		return driver.findElement(singapore);
@@ -20,5 +24,11 @@ public class StrongerTogetherPage {
 	
 	public WebElement About() {
 		return driver.findElement(about);
+	}
+	
+	public String Table() {
+		
+		String tablecontent=driver.findElement(table).getText();
+		return tablecontent;
 	}
 }

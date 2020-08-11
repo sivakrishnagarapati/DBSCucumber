@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="DBSCucumberProject" tests="1" started="1" failures="0" errors="1" ignored="0">
+  <testsuite name="cucumberOptions.TestRunner" time="18.954">
+    <testsuite name="DBS Awards validation" time="18.954">
+      <testcase name="DBS Awards validation" classname="DBS Awards validation" time="18.954">
+        <error>java.lang.NullPointerException&#13;
+	at pageObjects.WriteExcelFileDemo.writeExcel(WriteExcelFileDemo.java:33)&#13;
+	at stepDefinations.stepDefination.read_the_table_in_excel_sheet(stepDefination.java:48)&#13;
+	at ✽.Read the table in excel sheet(file:///D:/Assignment%20for%20DBS/DBSCucumberProject/src/test/java/features/DBS.feature:9)&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>

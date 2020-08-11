@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 7930000000,
+              "duration": 8858000000,
               "status": "passed"
             },
             "line": 3,
@@ -24,17 +24,17 @@
         ]
       },
       {
-        "start_timestamp": "2020-08-08T10:28:33.084Z",
+        "start_timestamp": "2020-08-11T11:55:51.246Z",
         "line": 6,
         "name": "DBS Awards validation",
         "description": "",
         "id": "dbs-awards-validation;dbs-awards-validation",
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 4716000000,
+              "duration": 2665000000,
               "status": "passed"
             },
             "line": 7,
@@ -46,7 +46,7 @@
           },
           {
             "result": {
-              "duration": 257000000,
+              "duration": 2931000000,
               "status": "passed"
             },
             "line": 8,
@@ -58,6 +58,7 @@
           },
           {
             "result": {
+              "duration": 80000000,
               "status": "passed"
             },
             "line": 9,
@@ -69,7 +70,7 @@
           },
           {
             "result": {
-              "duration": 447000000,
+              "duration": 1234000000,
               "status": "passed"
             },
             "line": 10,
@@ -81,9 +82,8 @@
           },
           {
             "result": {
-              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"link text\",\"selector\":\"Who We Are\"}\n  (Session info: chrome\u003d84.0.4147.105)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LAPTOP-QCTTUG78\u0027, ip: \u0027192.168.1.110\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_201\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\\Users\\sivak\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:23069}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 5f70bbd08a2e2ea0dfcbbb30cde04bbf\n*** Element info: {Using\u003dlink text, value\u003dWho We Are}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)\r\n\tat org.openqa.selenium.By$ByLinkText.findElement(By.java:220)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat pageObjects.AboutDBSPage.whoWeAre(AboutDBSPage.java:18)\r\n\tat stepDefinations.stepDefination.user_navigate_to_who_we_are_tab(stepDefination.java:64)\r\n\tat ✽.User navigate to Who we are tab(file:///D:/Assignment%20for%20DBS/DBSCucumberProject/src/test/java/features/DBS.feature:11)\r\n",
-              "duration": 10025000000,
-              "status": "failed"
+              "duration": 743000000,
+              "status": "passed"
             },
             "line": 11,
             "name": "User navigate to Who we are tab",
@@ -94,7 +94,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 2443000000,
+              "status": "passed"
             },
             "line": 12,
             "name": "User navigate to Our Awards \u0026 Accolades",
@@ -105,7 +106,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 492000000,
+              "status": "passed"
             },
             "line": 13,
             "name": "Validate the total number of awards",
@@ -116,13 +118,22 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 1880000000,
+              "status": "passed"
             },
             "line": 14,
             "name": "validate the name and caption of the awards",
             "match": {
-              "location": "stepDefinations.stepDefination.validate_the_name_and_caption_of_the_awards()"
+              "location": "stepDefinations.stepDefination.validate_the_name_and_caption_of_the_awards(io.cucumber.datatable.DataTable)"
             },
+            "rows": [
+              {
+                "cells": [
+                  "Euromoney;The Banker;Global Finance;Euromoney;Global Finance;Global Finance",
+                  "World\u0027s Best Bank 2019;Bank of the Year 2018;Best Bank in the World 2018;Awards For Excellence;World\u0027s Best Banks;World\u0027s Best Investment Banks and Derivatives Providers"
+                ]
+              }
+            ],
             "keyword": "And "
           }
         ],

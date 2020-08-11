@@ -1,9 +1,14 @@
 package stepDefinations;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import org.junit.Assert;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 
 import CucumberProject.DBSCucumberProject.Base;
+import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -12,6 +17,7 @@ import pageObjects.AboutDBSPage;
 import pageObjects.AwardsPage;
 import pageObjects.HomePage;
 import pageObjects.StrongerTogetherPage;
+import pageObjects.WriteExcelFileDemo;
 
 
 public class stepDefination {
@@ -35,21 +41,23 @@ public class stepDefination {
 
     @Then("^Read the table in excel sheet$")
     public void read_the_table_in_excel_sheet() throws Throwable {
-        
+    	strongertogetherpage= new StrongerTogetherPage(driver);
+    	System.out.println(strongertogetherpage.Table());
+    	
     }
 
     @Then("^Validate the total number of awards$")
     public void validate_the_total_number_of_awards() throws Throwable {
     	awardspage = new AwardsPage(driver);
-    	System.out.println(awardspage.awardTitle().getSize());
+    	Assert.assertEquals(22, awardspage.awardTitle());
     }
 
     @And("^User navigate to Singapore$")
     public void user_navigate_to_singapore() throws Throwable {
     	strongertogetherpage= new StrongerTogetherPage(driver);
     	strongertogetherpage.Singapore().click();
-    	
-        
+    	Thread.sleep(2000);
+    	        
     }
 
     @And("^User navigate to About in the header tabs$")
@@ -71,8 +79,44 @@ public class stepDefination {
     }
 
     @And("^validate the name and caption of the awards$")
-    public void validate_the_name_and_caption_of_the_awards() throws Throwable {
-        
+    public void validate_the_name_and_caption_of_the_awards(DataTable data) throws Throwable {
+    	awardspage = new AwardsPage(driver);
+    	List<String> dt=data.asList();
+    	String awardname=dt.get(0);
+    	String caption=dt.get(1);
+    	
+    	String[] awardArray = awardname.split(";");
+    	List<String> awardList = new ArrayList<String>();
+    	for (String str : awardArray) {
+    	    awardList.add(str);
+    	}
+    	
+    	String[] captionArray = caption.split(";");
+    	List<String> captionList = new ArrayList<String>();
+    	for (String stry : captionArray) {
+    		captionList.add(stry);
+    	}
+    	
+    	for (int i=0;i<awardspage.awardCaption().size();i++)
+    	{
+    		String cName=awardspage.awardCaption().get(i).getText();
+    		if(captionList.contains(cName))
+    		{
+    			String aName=awardspage.awardTitleName().get(i).getText();
+    			
+    			if(awardList.contains(aName))
+    			{
+    				int j=0;
+    				Assert.assertTrue(true);
+    				j++;
+    				if(j==awardList.size()-1)
+    				{
+    					break;
+    				}
+    			}
+    		}
+    	}
+    	
     }
 
 

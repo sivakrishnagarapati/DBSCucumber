@@ -3,7 +3,7 @@ Background:
 Given Browser is launched and DBS web URL is entered
 
 @PositiveTest
-Scenario Outline: DBS Awards validation
+Scenario: DBS Awards validation
 When User click on Learn More button
 And User navigate to Singapore
 Then Read the table in excel sheet
@@ -12,3 +12,4 @@ And User navigate to Who we are tab
 And User navigate to Our Awards & Accolades
 Then Validate the total number of awards
 And validate the name and caption of the awards
+|Euromoney;The Banker;Global Finance;Euromoney;Global Finance;Global Finance|World's Best Bank 2019;Bank of the Year 2018;Best Bank in the World 2018;Awards For Excellence;World's Best Banks;World's Best Investment Banks and Derivatives Providers|
