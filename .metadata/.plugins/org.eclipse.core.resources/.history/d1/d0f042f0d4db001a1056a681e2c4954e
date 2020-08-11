@@ -1,0 +1,43 @@
+package pageObjects;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class StrongerTogetherPage {
+	public WebDriver driver;
+
+	public StrongerTogetherPage(WebDriver driver) {
+		this.driver = driver;
+	}
+	
+	By singapore = By.linkText("Singapore");
+	By about = By.linkText("About");
+	By table = By.xpath("//table/tbody/tr/td");
+	
+	public WebElement Singapore() {
+		return driver.findElement(singapore);
+	}
+	
+	public WebElement About() {
+		return driver.findElement(about);
+	}
+	
+	public String[] Table() {
+		
+		//String tablecontent=driver.findElement(table).getText();
+		//return tablecontent;
+		
+		int tableContent= driver.findElements(table).size();
+		ArrayList<String> tabeltext = new ArrayList<String>();
+		for (int i=0;i<tableContent-3;i++)
+		{
+			tabeltext.add(driver.findElements(table).get(i).getText());
+		}
+		String[] tabletexts = tabeltext.toArray(new String[0]);
+		return  tabletexts;
+	}
+}

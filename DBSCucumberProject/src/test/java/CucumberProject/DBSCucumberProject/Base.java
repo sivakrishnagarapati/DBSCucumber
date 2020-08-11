@@ -13,13 +13,12 @@ public class Base {
 
 	public static WebDriver driver;
 	public static Properties prop;
-	public static WebDriver getDriver() throws IOException
-	{
-		prop=new Properties();
-		FileInputStream fis= new FileInputStream("D:\\Assignment for DBS\\DBSCucumberProject\\src\\test\\java\\CucumberProject\\DBSCucumberProject\\global.properties");
+
+	public static WebDriver getDriver() throws IOException {
+		prop = new Properties();
+		FileInputStream fis = new FileInputStream(".\\global.properties");
 		prop.load(fis);
-		System.setProperty("webdriver.chrome.driver",
-				"Driver\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "Driver\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

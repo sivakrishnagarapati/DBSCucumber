@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 8858000000,
+              "duration": 7810000000,
               "status": "passed"
             },
             "line": 3,
@@ -19,12 +19,23 @@
             "match": {
               "location": "stepDefinations.stepDefination.browser_is_launched_and_dbs_web_url_is_entered()"
             },
+            "after": [
+              {
+                "result": {
+                  "duration": 1147000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinations.stepDefination.hook2()"
+                }
+              }
+            ],
             "keyword": "Given "
           }
         ]
       },
       {
-        "start_timestamp": "2020-08-11T11:55:51.246Z",
+        "start_timestamp": "2020-08-11T19:00:50.416Z",
         "line": 6,
         "name": "DBS Awards validation",
         "description": "",
@@ -34,7 +45,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2665000000,
+              "duration": 2818000000,
               "status": "passed"
             },
             "line": 7,
@@ -42,11 +53,22 @@
             "match": {
               "location": "stepDefinations.stepDefination.user_click_on_learn_more_button()"
             },
+            "after": [
+              {
+                "result": {
+                  "duration": 513000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinations.stepDefination.hook2()"
+                }
+              }
+            ],
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 2931000000,
+              "duration": 2300000000,
               "status": "passed"
             },
             "line": 8,
@@ -54,11 +76,22 @@
             "match": {
               "location": "stepDefinations.stepDefination.user_navigate_to_singapore()"
             },
+            "after": [
+              {
+                "result": {
+                  "duration": 329000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinations.stepDefination.hook2()"
+                }
+              }
+            ],
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 80000000,
+              "duration": 1848000000,
               "status": "passed"
             },
             "line": 9,
@@ -66,11 +99,22 @@
             "match": {
               "location": "stepDefinations.stepDefination.read_the_table_in_excel_sheet()"
             },
+            "after": [
+              {
+                "result": {
+                  "duration": 343000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinations.stepDefination.hook2()"
+                }
+              }
+            ],
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 1234000000,
+              "duration": 1563000000,
               "status": "passed"
             },
             "line": 10,
@@ -78,11 +122,22 @@
             "match": {
               "location": "stepDefinations.stepDefination.user_navigate_to_about_in_the_header_tabs()"
             },
+            "after": [
+              {
+                "result": {
+                  "duration": 959000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinations.stepDefination.hook2()"
+                }
+              }
+            ],
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 743000000,
+              "duration": 304000000,
               "status": "passed"
             },
             "line": 11,
@@ -90,11 +145,22 @@
             "match": {
               "location": "stepDefinations.stepDefination.user_navigate_to_who_we_are_tab()"
             },
+            "after": [
+              {
+                "result": {
+                  "duration": 728000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinations.stepDefination.hook2()"
+                }
+              }
+            ],
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 2443000000,
+              "duration": 1224000000,
               "status": "passed"
             },
             "line": 12,
@@ -102,11 +168,22 @@
             "match": {
               "location": "stepDefinations.stepDefination.user_navigate_to_our_awards_accolades()"
             },
+            "after": [
+              {
+                "result": {
+                  "duration": 1271000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinations.stepDefination.hook2()"
+                }
+              }
+            ],
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 492000000,
+              "duration": 22000000,
               "status": "passed"
             },
             "line": 13,
@@ -114,11 +191,22 @@
             "match": {
               "location": "stepDefinations.stepDefination.validate_the_total_number_of_awards()"
             },
+            "after": [
+              {
+                "result": {
+                  "duration": 376000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinations.stepDefination.hook2()"
+                }
+              }
+            ],
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 1880000000,
+              "duration": 1015000000,
               "status": "passed"
             },
             "line": 14,
@@ -126,6 +214,17 @@
             "match": {
               "location": "stepDefinations.stepDefination.validate_the_name_and_caption_of_the_awards(io.cucumber.datatable.DataTable)"
             },
+            "after": [
+              {
+                "result": {
+                  "duration": 388000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "stepDefinations.stepDefination.hook2()"
+                }
+              }
+            ],
             "rows": [
               {
                 "cells": [

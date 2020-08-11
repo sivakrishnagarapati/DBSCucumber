@@ -1,0 +1,16 @@
+package stepDefinations;
+
+import io.cucumber.java.AfterStep;
+import pageObjects.Screenshot;
+
+public class Hooks {
+
+	Screenshot screenshot;
+	@AfterStep("@Case5")
+	public void hook2()
+	
+	{
+		screenshot = new Screenshot(driver);
+		screenshot.takess();
+	}
+}

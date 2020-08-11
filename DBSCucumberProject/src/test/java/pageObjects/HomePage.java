@@ -10,9 +10,9 @@ public class HomePage {
 	public HomePage(WebDriver driver) {
 		this.driver = driver;
 	}
-	
+
 	By learnmore = By.linkText("Learn More");
-	
+
 	public WebElement learnMore() {
 		return driver.findElement(learnmore);
 	}

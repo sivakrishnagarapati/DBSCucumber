@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="21.684">
-<testcase classname="DBS Awards validation" name="DBS Awards validation" time="21.479">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="25.303">
+<testcase classname="DBS Awards validation" name="DBS Awards validation" time="25.094">
 <system-out><![CDATA[Given Browser is launched and DBS web URL is entered........................passed
 When User click on Learn More button........................................passed
 And User navigate to Singapore..............................................passed
